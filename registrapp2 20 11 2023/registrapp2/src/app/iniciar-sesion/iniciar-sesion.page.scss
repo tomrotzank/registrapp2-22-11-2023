@@ -1,0 +1,87 @@
+#container {
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #8c8c8c;
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+  
+  #avatar{
+    margin: auto;
+    position: relative;
+    background: rgb(138, 138, 138);
+    width:  80px;
+    height: 80px;
+    border-radius: 50%;
+    top: -50px;
+  }
+  
+  #botoninicial{
+    font-size:20px;
+    font-weight: bold;
+    font-family: arial;
+    font-weight:auto;
+    border:auto;
+    width:auto;
+    height:40px;
+  }
+  
+  #rayitasmenu{
+  width:50px;
+  height: auto;
+  margin-left: auto;
+  position: relative;
+  top:auto;
+  }
+  
+  ion-content {
+    --background: white;
+  }
+  
+  ion-title {
+    background-color: #004aad; /* Cambia el color de fondo del título a azul */
+    color: #ffde59; /* Cambia el color del texto a blanco para que se vea mejor con el fondo azul */
+    padding: 15px; /* Añade un poco de espacio alrededor del texto */
+    text-align: center;
+  }
+
+  #h1{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: arial;
+    font-weight:auto;
+    padding: 90px;
+  }
+
+  ion-accordion-group{
+    margin-top: 169px;
+    color: rgb(235, 197, 28);
+  }
+  
+  ion-card{
+    margin-top: 183px;
+  }
+
+  #camara{
+    margin-left: 130px;
+    font-family: arial
+  }

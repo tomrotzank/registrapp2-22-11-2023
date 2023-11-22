@@ -1,0 +1,88 @@
+<ion-content [fullscreen]="true" >
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title id="title">
+        RegistrApp
+      </ion-title>
+      
+      <!-- Imagen RegistrApp Header-->
+      <img id="fotoregistrapp"  src="../../assets/icon/RegistraApp Imagen.png"/>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-title id="title">
+    RegistrApp
+  </ion-title>
+
+
+<!--ACORDEON DEL MENU-->
+
+    <div>
+      <ion-button (click)="volverAHome()" id="flechaVolver" class="flecha-btn" color="warning" expand="">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </div>
+  
+
+<!--mensaje de bienvenida-->
+
+  <div>
+    <h1 id="h1">Bienvenido<br>
+        [nombreUsuario]</h1>
+  </div>
+
+  <!--AVATAR-->
+  <div id="container">
+    <ion-avatar id="avatar" #avatar>
+      <img alt="Silhouette of a person's head" src="https://pbs.twimg.com/media/E9k1SVXWQAYUP03?format=jpg&name=large" />
+    </ion-avatar>
+    <br><br>
+
+
+  </div>
+  <div>
+    <ion-card color="warning">
+      <ion-card-header>
+        <ion-card-title>Asistencias</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content> Podras ver tu progreso de asistencia de cada ramo de tu carrera. </ion-card-content>
+    </ion-card>
+  </div>
+  
+  <!--Seccion para abrir camara-->
+  <div id="camara">
+    <ion-button (click)="abrirCamara()" fill="solid" color="warning" expand="" >Abrir Camara</ion-button>
+  </div>
+
+  <!--ACORDEON ASISTENCIAS-->
+  <div>
+    <ion-accordion-group>
+
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label>Asistencias - <strong>Ingeniería en Informática</strong></ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Programacion Aplicaciones Moviles
+          <br> 87% de Asistencia
+        </div>
+        <div class="ion-padding" slot="content">Arquitectura
+          <br> 100% de Asistencia
+        </div>
+        <div class="ion-padding" slot="content">Calidad de Software
+          <br> 30% de Asistencia
+        </div>
+        <div class="ion-padding" slot="content">Ingles Elemental
+          <br> 77,5% de Asistencia
+        </div>
+        <div class="ion-padding" slot="content">Estadistica Descriptiva
+          <br> 68% de Asistencia
+        </div>
+        <div class="ion-padding" slot="content">Proceso de Portafolio
+          <br> 75% de Asistencia
+        </div>
+      </ion-accordion>
+
+    </ion-accordion-group>
+  </div>
+</ion-content>

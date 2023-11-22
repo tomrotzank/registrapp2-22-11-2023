@@ -1,0 +1,79 @@
+<ion-content [fullscreen]="true" >
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title id="title">
+        RegistrApp
+      </ion-title>
+      
+      <!-- Imagen RegistrApp Header-->
+      <img id="fotoregistrapp"  src="../../assets/icon/RegistraApp Imagen.png"/>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-title id="title">
+    RegistrApp
+  </ion-title>
+
+<!--VOLVER-->
+  <div>
+    <ion-button (click)="volverAHome()" id="flechaVolver" class="flecha-btn" color="warning" expand="">
+      <ion-icon name="arrow-back"></ion-icon>
+    </ion-button>
+    
+  </div>
+
+
+<!--mensaje de bienvenida-->
+  <div>
+    <h1 id="h1">Bienvenido<br>
+        [nombreUsuario]</h1><br>
+  </div>
+
+
+  <!--AVATAR-->
+  <div id="container">
+    <ion-avatar id="avatar" #avatar>
+      <img alt="Silhouette of a person's head" src="https://pbs.twimg.com/media/E9k1SVXWQAYUP03?format=jpg&name=large" />
+    </ion-avatar>
+
+    <br><br><BR><bR><BR><BR>
+  </div>
+
+
+  <div>
+    <ion-card #cardAnimacion>
+      <!-- CREDENCIALES-->
+      <ion-card-content #cardAnimacion>
+        <ion-card #cardAnimacion>
+        <ion-list>
+          <ion-item>
+            <!-- Nueva Contraseña-->
+            <ion-input label="Nueva Contraseña" type="password"labelPlacement="floating" placeholder="Ingrese su contraseña"></ion-input>
+          </ion-item>
+
+          <!-- Confirma Contraseña-->
+          <ion-item>
+            <ion-input label="Confirma Contraseña" type="password" labelPlacement="floating" placeholder="Ingrese su Contraseña"></ion-input>
+          </ion-item>
+        </ion-list>
+        <!-- animacion angular-->
+        <div> 
+          <ion-item>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+          </ion-item>
+        </div>
+      </ion-card>
+
+        <!-- ANIMACION DEL CARD EN IONIC-->
+        
+      </ion-card-content>
+
+      <div id="confirmarylisto"> 
+        <ion-button (click)="play()" id="botonConfirmar" color="warning" expand="">Confirmar</ion-button>
+        <ion-button (click)="volverAHome()" id="botonListo"  color="warning" expand="">Listo</ion-button> <br><br>
+      </div> 
+      
+    </ion-card>
+  </div>
+  
+</ion-content>
